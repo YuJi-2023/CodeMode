@@ -1,0 +1,32 @@
+
+.game {
+  color: orchid;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid orchid;
+}
+
+.resetBtn {
+  background-color: orchid;
+}
+
+.gameBtn {
+ background-color: white;
+ border: 2px solid orchid;
+ border-radius: 50%;
+ width: 100px;
+ height: 100px;
+}
+
+
+.moveIcon {
+  height: 60px;
+  background-color: transparent;
+}
+
+#roundResult {
+  font-size: 1.5rem;
+}

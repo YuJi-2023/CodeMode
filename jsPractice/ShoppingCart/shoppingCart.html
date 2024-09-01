@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="../generalStyle.css" />
+    <link rel="stylesheet" href="./shoppingCart.css" />
+    <link rel="icon" type="image/x-icon" href="../../img/favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">JavaScript Practice</h1>
+      <div class="nav">
+        <a href="../../index.html" class="pageLink">Homepage</a>
+        <a href="../jsPractice.html" class="pageLink">Project Page</a>
+        <a href="../RockPaperScissors/game.html" class="pageLink">Game Page</a>
+        <a href="../ToDoList/toDoList.html" class="pageLink">Todolist Page</a>
+      </div>
+    </header>
+    <main>
+      <div class="container cart">
+        <button class="btn cartBtn" onclick="showCartQuantity()">
+          Show Quantity
+        </button>
+        <div>Total in Cart is: <span id="totalQuantity"></span></div>
+        <div class="btnGroup">
+          <button class="btn cartBtn" onclick="addOne()">add to cart</button>
+          <button class="btn cartBtn" onclick="addTwo()">+2</button>
+          <button class="btn cartBtn" onclick="addThree()">+3</button>
+        </div>
+        <button class="btn cartBtn" onclick="resetCart()">reset cart</button>
+      </div>
+      <div class="container calculator">
+        <p>Shipping Calculator</p>
+        <input
+          class="inputCost"
+          type="number"
+          placeholder="items cost"
+          onkeydown="handleEnterKey(event)"
+        />
+        <button class="btn calBtn" onclick="calculateTotal()">Calculate</button>
+        <p class="deliverFee">Cost under $50, need a $10 delivery fee</p>
+        <p class="finalCost"></p>
+      </div>
+    </main>
+    <footer>
+      <div><mark>&copy; Sophia Here!</mark></div>
+    </footer>
+    <script src="./shoppingCart.js"></script>
+  </body>
+</html>

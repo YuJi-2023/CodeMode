@@ -1,0 +1,177 @@
+/* optional: reset the default size from 16px to 10px by set font-size in html as 62.5% and use rem for inheritting font sizing */
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* font-size rules */
+body {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+h1 {
+  font-size: 4.2rem;
+  margin-top: 0;
+  padding-top: 6rem;
+}
+h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+h3 {
+  font-size: 2rem;
+  margin-bottom: 0rem;
+}
+h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+header {
+  background: url(./img/bg-canva.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+section {
+  color: aliceblue;
+  margin: 30px;
+  padding: 60px;
+}
+
+img {
+  height: 30vh;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 0 20px;
+}
+
+table, th, tr, td {
+  border: 1px, solid, white;
+  border-collapse:collapse;
+}
+.centre {
+  text-align: center;
+}
+.secOne, .secThree {
+  background: linear-gradient(50deg, rgba(163, 135, 84, 0.846) 35%, rgba(219,172,240,1) 100%);
+}
+.secTwo {
+  background: linear-gradient(50deg, rgba(219,172,240,1) 35%, rgba(64,0,255,0.8463979341736695) 100%);
+}
+.interviewimg {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.STARR {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.story {
+  background: linear-gradient(rgb(219,172,240), rgba(238, 187, 77, 0.5));
+  border-radius: 10px;
+  padding: 15px;
+  margin: 5px;
+  width: 30%;
+}
+
+.story p {
+  margin-top: 0.3rem;
+  color: #ccc;
+  line-height: 1.2rem;
+}
+
+.part2-container {
+  margin: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid lightpink;
+  height: 20rem;
+}
+
+.box {
+  display: flex;
+  margin: 1rem;
+  width: 15rem;
+  height: 10rem;
+  background: linear-gradient(rgba(125, 94, 217, 0.5), rgb(238, 187, 77, 0.5));
+  border-radius: 20%;
+  justify-content: center;
+  align-items: center;
+}
+
+.table {
+  margin: 0;
+  height: auto;
+  width: auto;
+  font-size: 1rem;
+}
+
+.two-column {
+  text-align: left;
+  column-count: 2;
+  column-gap: 3rem;
+  column-rule: 2px solid lightpink;
+}
+.form {
+  padding: 2rem;
+}
+
+#title {
+  text-decoration: none;
+  color: antiquewhite;
+}
+#backToTopBtn {
+  color: aliceblue;
+  background-color: rgba(152, 209, 66);
+  border-style: none;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 30px;
+}
+
+
+#heart {
+  position: fixed;
+  top: 10rem;
+  left: 10rem;
+  opacity: 0.6;
+  transition: transform 0.5s, background-color 0.5s, ease-in;
+  
+}
+#heart:before,
+#heart:after {
+  position: absolute;
+  content: "";
+  left: 50px;
+  top: 0;
+  width: 50px;
+  height: 80px;
+  background: lightpink;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+  transition: background-color 0.5s ease-in;
+}
+#heart:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+#heart:hover {
+  transform: perspective(100px) scale(1.5) rotateY(15deg);
+}
+
+#heart:hover:before,
+#heart:hover:after {
+  background-color: yellow;
+}
+

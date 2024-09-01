@@ -1,0 +1,12 @@
+main {
+ 
+  background-image: url('../img/bg-canva.jpg');
+  opacity: 0.5;
+  height: 100vh;
+}
+
+
+#title {
+  color: orchid;
+}
+
