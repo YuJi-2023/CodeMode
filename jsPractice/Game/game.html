@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hit the Target</title>
+    <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="../generalStyle.css" />
-    <link rel="stylesheet" href="./widget.css" />
+    <link rel="stylesheet" href="./game.css" />
     <link rel="icon" type="image/x-icon" href="../../img/favicon.ico" />
   </head>
   <body>   
@@ -21,15 +21,20 @@
   </div>
   </header>
   <main>
-    <div class="container game">
-      <h3>Ready to Game?</h3>
-      <div>
-        <img id="target" src="./target.png" />
-      </div>
+    <div>
+      <h3>Pick Your Game to Play</h3>
+      <ul>
+        <li>Rock Paper Scissors 
+          <button class="btn playBtn" onclick="window.location.href='./RockPaperScissors/rockPaperScissors.html';">Play</button>
+        </li>
+        <li>Hit the Target
+          <button class="btn playBtn" onclick="window.location.href= './HitTarget/hitTarget.html';">Play</button>
+        </li>
+      </ul>
     </div>
   </main>
   <footer><div>&copy; CodeMode 2024</div></footer>
-  <script src="./widget.js"></script>
+  <script src="./game.js"></script>
   </main>
   </body>
 </html>

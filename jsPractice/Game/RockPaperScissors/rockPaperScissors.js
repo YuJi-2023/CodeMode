@@ -78,12 +78,12 @@ function playGame(usermove) {
     //).innerHTML = `You picked ${usermove} - Computer picked ${move}`;
   ).innerHTML = ` You picked
             <img
-              src="../images/move-icon-${usermove}.png"
+              src="../../images/move-icon-${usermove}.png"
               class="moveIcon"
               alt="rock icon"
             />
             Computer picked<img
-              src="../images/move-icon-${move}.png"
+              src="../../images/move-icon-${move}.png"
               class="moveIcon"
               alt="rock icon"
             />`;
