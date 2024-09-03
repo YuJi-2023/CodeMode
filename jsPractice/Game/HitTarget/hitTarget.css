@@ -1,1 +1,21 @@
 /* Add CSS here */
+.gameGuide {
+  color: rgb(2, 21, 29);
+  padding: 2rem;
+  border-bottom: 2px solid orchid;
+
+}
+.gameStep {
+  font-size: small;
+}
+
+.gameControl {
+  margin: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.gameField {
+  
+  border: 2px solid orchid;
+  height: 500px;
+}

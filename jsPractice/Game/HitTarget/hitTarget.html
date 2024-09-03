@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hit the Target</title>
     <link rel="stylesheet" href="../../generalStyle.css" />
+    <link rel="stylesheet" href="../game.css" />
     <link rel="stylesheet" href="./hitTarget.css" />
     <link rel="icon" type="image/x-icon" href="../../../img/favicon.ico" />
   </head>
@@ -21,12 +22,34 @@
   </div>
   </header>
   <main>
-    <div class="container game">
-      <h3>Ready to Game?</h3>
+    <div class="game">
+    <div class="gameGuide">
+      <h2>Hit The Target</h2>
       <div>
-        <img id="target" src="./target.png" />
+        <h4>Objective</h4>
+        <p class="gameStep">Score as many points as you can by hitting the targets before time runs out!</p>
+      </div>
+      <div>
+        <h4>How to play</h4>
+        <ol type="1">
+          <li>Start the Challenge: <span class="gameStep">Once the game begins, you have 30 intense seconds to rack up as many points as possible.</span></li>
+          <li>Targets on the Move: <span class="gameStep">Every 2 seconds, a new target will pop up in a random spot on the play field. Keep your eyes sharp—these targets won’t wait around!</span></li>
+          <li>Smash That Target: <span class="gameStep">As soon as you see a target, click on it fast! Every hit scores you a point and brings you closer to victory.</span></li>
+          <li>Missed It? No Problem: <span class="gameStep">If you miss a target, don’t sweat it! Another one will appear in just a couple of seconds. Stay focused and keep clicking!</span></li>
+          <li>Race Against the Clock: <span class="gameStep">When the 30-second timer hits zero, the game is over. Your score will be displayed—will it be a new high score?</span></li>
+        </ol>
+      </div>
+      <div>
+        <h4>Hot tips</h4>
+        <p class="gameStep">Stay on your toes! The targets move quickly, so be ready for anything.
+        </p>
       </div>
     </div>
+    <div class="gameControl"><button class="btn playBtn">Play</button><button class="btn playBtn">Pause</button><button class="btn playBtn">Reset</button></div>
+    <div class="gameField">
+        <img id="target" src="./target.png" />
+    </div>
+  </div>
   </main>
   <footer><div>&copy; CodeMode 2024</div></footer>
   <script src="./hitTarget.js"></script>
