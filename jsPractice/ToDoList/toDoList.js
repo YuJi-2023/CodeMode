@@ -1,4 +1,3 @@
-// part 1 update cart quantity
 let toDoList = [];
 
 renderTodolist();
@@ -30,3 +29,32 @@ function addToDo() {
 
   renderTodolist();
 }
+
+const form = document.getElementById("submitForm");
+const emails = [];
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const firstName = document.getElementById("firstName").value;
+  const lastName = document.getElementById("lastName").value;
+  const email = document.getElementById("email").value;
+  const age = parseInt(document.getElementById("age").value);
+
+  if (age < 18) {
+    alert("18+ event");
+    return;
+  }
+
+  if (emails.includes(email)) {
+    alert("email taken");
+    return;
+  }
+  emails.push(email);
+
+  const res = document.getElementById("results");
+
+  res.innerHTML += "<p>";
+  res.innerHTML += `${firstName} - ${lastName}, ${age}-yo, email is ${email}`;
+  res.innerHTML += "</p>";
+});
